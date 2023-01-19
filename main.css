@@ -1,0 +1,390 @@
+
+.dropdown-toggle,.dropdown-item{
+    z-index: 1;
+    position: relative;
+}
+#newpg{
+    display: flexbox;
+    width: min-content;
+    height: auto;
+    float: left;
+}
+.newpgimg{
+    width: 40rem;
+    height: 30rem;
+}
+.pnewpg{
+    float: right;
+    
+}
+.zgz{
+    width: 600px;
+    height: 300px;
+    max-width: 100%;
+    min-width: 90%;
+    object-fit: cover;
+}
+.slider{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    translate:(50%-50%) ;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus{
+    outline:none;
+    box-shadow:none;
+}
+
+*, html, body {
+    box-sizing: border-box;
+    margin: 0;
+}
+.pull-left{
+    position: absolute;
+    bottom: 15%;
+    right: 80%;
+}
+.pull-right{
+    position: absolute;
+    bottom: 15%;
+    left: 80%;
+}
+#stuff{
+    margin-top: 0%;
+}
+#Name{
+    margin-top: 10%;
+    margin-left: 50%;
+    border-bottom: 1px black solid;
+}
+#Fiyat{
+    margin-top: 20%;
+    margin-left: 45%;
+    border-bottom: 1px black solid;
+    font-weight:900;
+    font-size: 25px;
+}
+#Durum{
+    margin-top: 30%;
+    margin-left: 45%;
+    border-bottom: 1px black solid;
+    font-weight:900;
+    font-size: 25px;
+}
+#Durum2{
+    font-weight:900;
+    font-size: 25px;
+}
+#M2{
+    
+    margin-top: 40%;
+    margin-left: 45%;
+    border-bottom: 1px black solid;
+    font-weight:900;
+    font-size: 25px;
+}
+#M2_2{
+    font-weight:900;
+    font-size: 25px;
+}
+#type{
+    
+    margin-top: 50%;
+    margin-left: 45%;
+    border-bottom: 1px black solid;
+    font-weight:900;
+    font-size: 25px;
+}
+#type_2{
+    font-weight:900;
+    font-size: 25px;
+}
+#Oda{
+    display: block;
+    margin-left: 45%;
+    border-bottom: 1px black solid;
+    font-weight:900;
+    font-size: 25px;
+}
+#Oda_2{
+    font-weight:900;
+    font-size: 25px;
+}
+#Adres{
+    
+    margin-top: 65%;
+    margin-left: 45%;
+    border-bottom: 1px black solid;
+    font-weight:900;
+    font-size: 25px;
+}
+#Adres_2{
+    font-weight:900;
+    font-size: 25px;
+}
+.Ko{
+    min-height: 100%;
+    margin: 0 auto -50px;
+}
+#footer {
+    clear: both;
+    background-color: #2E2E2E;
+    color: #fff;
+    width: 100%;
+    margin-top: 30%;
+}
+.footer-content>p:first-child {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.footer-content{
+    margin: 40px 0 35px;
+}
+.footer-content>p {
+    color: #ababab;
+    font-size: 12px;
+}
+.row{
+    margin-right: 0;
+}
+#Anasayfa{
+    /* position: relative; */
+    padding-bottom: 2.5rem; 
+    height: auto;
+}
+#geri{
+    height: 50px;
+}
+#a2,#a3,#Anasayfa,.card-body,.card,.maindiv,#page,html,body{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+#a2{
+    width: 100%;
+    height: 400px;
+}
+#a2>img{
+    width: 100%;
+    height: 600px;
+}
+#a2>span{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    top: 200px;
+    transform:translate(-50%, -50%);
+}
+#a2>#Sall{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 900;
+    left: 40%;
+    top: 300px;
+    transform:translate(-50%, -50%);
+}
+#a2>#Kall{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 900;
+    left: 60%;
+    top: 300px;
+    transform:translate(-50%, -50%);
+}
+#a3{
+    display: none;
+    width: 100%;
+    /* margin-top: 5%; */
+    height: auto;
+}
+#a3>p{
+    margin-bottom: 5px;
+    text-align: center;
+}
+#a3>h1{
+    text-align: center;
+}
+.fa-star{
+    color: yellow;
+}
+.profiles{
+    width: 45px;
+    height: 45px;
+    float: left;
+    border-radius: 120px;
+    display: block;
+}
+.profile-title{
+    margin-top: 2%;
+    margin-left: 120px;
+}
+#ContactPage{
+    display: none;
+}
+.loader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+@media only screen and (max-width: 700px) {
+    #page{
+        width: 100%;
+        height: 100%;
+    }
+    .zgz{
+        height: 200px;
+    }
+    .jel{
+        width: 100%;
+        height: 100%;
+        /* max-height: 264px; */
+        top: -60%;
+    }
+    .slider{
+        display: flex;
+        /* flex-direction: column-reverse; */
+        bottom:500px;
+        width: 95%;
+        position: absolute;
+        margin-right: 5px;
+        margin-top: 20%;
+    }
+     .pull-left{
+        position: absolute;
+        bottom: 15%;
+        right: 80%;
+        padding: 0;
+    }
+    .pull-right{
+        position: absolute;
+        bottom: 15%;
+        left: 80%;
+        margin:0;
+    }
+    /* #footer {
+        background-color: #2E2E2E;
+        padding: 70px 0;
+        color: #fff;
+        margin-top: 300%;
+    } */
+    #stuff{
+        margin-top: 75%;
+    }
+    #Name{
+        display: flex;
+        margin-top: 5%;
+        margin-left: 30%;
+        border-bottom: 1px black solid;
+        font-size: 40px;
+    }
+    #Fiyat{
+        display: flex;
+        margin-top: 5%;
+        margin-left: -10%;
+        border-bottom: 1px black solid;
+        font-weight:900;
+        font-size: 25px;
+    }
+    #Durum{
+        display: flex;
+        margin-top: 5%;
+        margin-left: -10%;
+        border-bottom: 1px black solid;
+        font-weight:900;
+        font-size: 25px;
+    }
+    #type{
+        display: flex;
+        margin-top: 5%;
+        margin-left: -10%;
+        border-bottom: 1px black solid;
+        font-weight:900;
+        font-size: 25px;
+    }
+    #type_2{
+        font-weight:900;
+        font-size: 25px;
+    }
+    #Oda{
+        display: flex;
+        margin-top: 5%;
+        margin-left: -10%;
+        border-bottom: 1px black solid;
+        font-weight:900;
+        font-size: 25px;
+    }
+    #Oda_2{
+        font-weight:900;
+        font-size: 25px;
+    }
+    #Durum2{
+        font-weight:900;
+        font-size: 25px;
+    }
+    #M2{
+        display: flex;
+        margin-top: 5%;
+        margin-left: -10%;
+        border-bottom: 1px black solid;
+        font-weight:900;
+        font-size: 25px;
+    }
+    #M2_2{
+        font-weight:900;
+        font-size: 25px;
+    }
+    #Adres{
+        display: flex;
+        margin-top: 5%;
+        margin-left: -10%;
+        border-bottom: 1px black solid;
+        font-weight:900;
+        font-size: 25px;
+    }
+    #Adres_2{
+        font-weight:900;
+        font-size: 20px;
+    }
+    #a2>img{
+        height: 400px;
+    }
+    #a2>#Sall{
+        left: 30%;
+    }
+    #a2>#Kall{
+        left: 70%;
+    }
+    #contact{
+        z-index: 1;
+    }
+  }
