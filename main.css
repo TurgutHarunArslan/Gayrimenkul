@@ -135,6 +135,7 @@
     background-color: #2E2E2E;
     color: #fff;
     width: 100%;
+    margin-top: 30%;
 }
 .footer-content>p:first-child {
     margin-bottom: 15px;
@@ -159,18 +160,18 @@
 #geri{
     height: 50px;
 }
-#a2,#a3,#a4,#Anasayfa,.card-body,.card,.maindiv,#page,html,body{
+#a2,#a3,#Anasayfa,.card-body,.card,.maindiv,#page,html,body{
     background-color: black;
     color: white;
     border-color: white;
 }
 #a2{
     width: 100%;
-    height: 400px;
 }
 #a2>img{
     width: 100%;
-    height: 400px;
+    height: auto;
+    max-height: 900px;
 }
 #a2>span{
     position: absolute;
@@ -199,8 +200,9 @@
     transform:translate(-50%, -50%);
 }
 #a3{
+    display: none;
     width: 100%;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     height: auto;
 }
 #a3>p{
@@ -209,12 +211,6 @@
 }
 #a3>h1{
     text-align: center;
-}
-#a4{
-    width: 100%;
-    margin-bottom: 10%;
-    margin-top: 50px;
-    height: auto;
 }
 .fa-star{
     color: yellow;

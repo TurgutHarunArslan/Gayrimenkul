@@ -88,12 +88,13 @@ function onPressed(){
   newContent(currentPage)
   addMargin()
 }
-function Contact(){
+function Hakk(){
   console.log("ez")
   document.getElementById("maindiv").style.display = "none";
   document.getElementById("Anasayfa").style.display = "none";
   document.getElementById("page").style.display ="none";
-  document.getElementById("ContactPage").style.display = "block";
+  document.getElementById("a3").style.display = "block";
+  document.getElementById("a3").style.height = "500px";
   document.getElementsByTagName("footer")[0].style.display = "none";
 }
 function onGeri(){
@@ -116,39 +117,24 @@ function addMargin(){
     console.log(tg)
     document.getElementsByClassName("slider")[0].style.marginTop = '110%';
     document.getElementById("stuff").style.marginTop = "115%";
-    document.getElementById('findTitle').style.marginTop = "55%";
-    document.getElementsByClassName('Selectors2')[0].style.marginTop = "60%";
-    document.getElementsByClassName('Selectors2')[1].style.marginTop = "60%";
     }else if(vw < 700 && tz1 == "static"){
       console.log("1.1")
       console.log(tg)
       document.getElementsByClassName("slider")[0].style.marginTop = '110%';
       document.getElementById("stuff").style.marginTop = "115%";
-      document.getElementById('findTitle').style.marginTop = "55%";
-      document.getElementsByClassName('Selectors2')[0].style.marginTop = "60%";
-      document.getElementsByClassName('Selectors2')[1].style.marginTop = "60%";
     }else if(vw < 700 && tg == 'true'){
       console.log("2")
       document.getElementsByClassName("slider")[0].style.marginTop = '65%';
       document.getElementById("stuff").style.marginTop = "95%";
-      document.getElementById('findTitle').style.marginTop = "10%";
-      document.getElementsByClassName('Selectors2')[0].style.marginTop = "10%";
-      document.getElementsByClassName('Selectors2')[1].style.marginTop = "10%";
     }else if(vw < 700 && tg == 'false'){
       console.log("3")
       document.getElementsByClassName("slider")[0].style.marginTop = '25%';
       document.getElementById("stuff").style.marginTop = "95%";
-      document.getElementById('findTitle').style.marginTop = "0%";
-      document.getElementsByClassName('Selectors2')[0].style.marginTop = "10%";
-      document.getElementsByClassName('Selectors2')[1].style.marginTop = "10%";
     }
     else if( vw > 701){
       console.log("5")
       document.getElementsByClassName("slider")[0].style.marginTop = '0%';
       document.getElementById("stuff").style.marginTop = "0%";
-      document.getElementById('findTitle').style.marginTop = "0%";
-      document.getElementsByClassName('Selectors2')[0].style.marginTop = "0%";
-      document.getElementsByClassName('Selectors2')[1].style.marginTop = "0%";
     }
   }
 document.getElementById('anasayfa').addEventListener("click", Sayfa);
@@ -206,18 +192,18 @@ function HideMain(){
     document.getElementById("maindiv").style.display = "block";
     document.getElementById("page").style.display="none";
     document.getElementsByTagName("footer")[0].style.display = "block";
-    document.getElementById("ContactPage").style.display = "none";
+    document.getElementById("a3").style.display = "none";
   }else{
     document.getElementById("maindiv").style.display = "none";
     document.getElementById("page").style.display="flex";
     document.getElementsByTagName("footer")[0].style.display = "none";
-    document.getElementById("ContactPage").style.display = "none";
+    document.getElementById("a3").style.display = "none";
   }
 }
 
 
 document.getElementById("geri").addEventListener("click", onGeri);
-document.getElementById("cont").addEventListener("click", Contact);
+document.getElementById("Hak").addEventListener("click", Hakk);
 function newContent(page){
   const dbRef = ref(getDatabase());
   get(child(dbRef, page)).then((snapshot) => {
@@ -261,7 +247,7 @@ function newContent(page){
 function dataForEstate(){
   document.getElementById('Anasayfa').style.display = 'none';
   document.getElementById('page').style.display = 'none';
-  document.getElementById("ContactPage").style.display = "none";
+  document.getElementById("a3").style.display = "none";
   Created = false;
   CheckİfCreated()
   const dbRef2 = ref(getDatabase());
