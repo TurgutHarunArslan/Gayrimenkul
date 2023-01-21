@@ -1,6 +1,6 @@
 
 .dropdown-toggle,.dropdown-item{
-    z-index: 1;
+    z-index: 10;
     position: relative;
 }
 #newpg{
